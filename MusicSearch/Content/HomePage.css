@@ -1,0 +1,19 @@
+﻿body {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header{
+    margin: auto;
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    top:0;
+    background-color : cornflowerblue;
+
+}
+img.vklogo{
+    width: 100px;
+    height: 100px;
+}

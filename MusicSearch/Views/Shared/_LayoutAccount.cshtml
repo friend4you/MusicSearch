@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/AccountStyle.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/AccountScript.js"></script>
+</head>
+<body>
+    <header>  
+              
+        @Html.ActionLink("GeoMusicSearch", "Account", "Home", new { area = "" }, new { @class = "header-title" })
+        <audio controls id="music-player"></audio>
+        <a id="logout" href="/Home/Index">Logout</a>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - VladArsnyuk Ink.</p>
+    </footer>
+    
+</body>
+</html>

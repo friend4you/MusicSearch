@@ -11,8 +11,13 @@ namespace MusicSearch.Models.Services
         {
             using(var db = new MusicSearchContext())
             {
-                db.Users.Add(user);
-                db.SaveChanges();
+                if (db.Users.Contains<User>(user))
+                    return;
+                else
+                {
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                }                
             }
         }
     }

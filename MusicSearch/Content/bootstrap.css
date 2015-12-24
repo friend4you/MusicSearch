@@ -4078,7 +4078,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+    /*float: left;*/
   }
 }
 
@@ -4118,7 +4118,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-collapse {
-    width: auto;
+    width: 70%;
     border-top: 0;
     box-shadow: none;
   }
@@ -4168,9 +4168,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
+  position: fixed;  
   border-width: 0 0 1px;
 }
 
@@ -4183,6 +4181,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-top {
   top: 0;
+  width: auto;
   z-index: 1030;
 }
 
@@ -4192,8 +4191,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand {
-  float: left;
+  
   padding: 15px 15px;
+  margin-left: 100px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4501,8 +4501,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color: #4a7cb4;
+  border-color: #4a7cb4;
 }
 
 .navbar-inverse .navbar-brand {

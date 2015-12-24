@@ -1,17 +1,30 @@
 ﻿
 @{
-    ViewBag.Title = "Account";    
+    ViewBag.Title = "Account";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
 }
 
-<script src="~/Scripts/jquery-1.10.2.js"></script>
-<script src="~/Scripts/AccountScript.js"></script>
-<link rel="stylesheet" type="text/css" href="~/Content/AccountStyle.css" />
-<h2>Account</h2>
+<div class="wrapper">
+    <div class="content">
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5luFPO_AhoqTC3KMtm-CKtMC5jrvdDU8&callback=initMap" async defer></script>        
+        <div class="song-type">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">My songs</a></li>
+                <li role="presentation"><a href="#">Popular</a></li>
+                <li role="presentation"><a href="#">Nearby</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="user-info">
+            <div class="user-photo"></div><span class="user-name">Арсенюк Владислав</span>
+        </div>
+        <div class="user-playlist"></div>
+    </div>
+
+</div>
 
 
 
-<div id="map"></div>
-
-
-
-<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5luFPO_AhoqTC3KMtm-CKtMC5jrvdDU8&callback=initMap" async defer></script>
